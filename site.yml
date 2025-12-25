@@ -1,0 +1,3 @@
+name: "My YAML Site"         # Site name
+theme: default             # Theme folder name
+footer: "© 2025 YAML Builder"  # Footer text
