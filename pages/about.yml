@@ -1,0 +1,24 @@
+title: About
+blocks:
+  - type: text
+    content: |
+      This site is a demo of a YAML static site builder.
+      It supports text blocks, heroes, buttons, and generic HTML elements.
+    style:
+      color: "#444"
+      font-size: "16px"
+
+  - type: element
+    tag: section
+    attrs:
+      id: mission
+    style:
+      padding: "20px"
+      background-color: "#eee"
+    children:
+      - type: element
+        tag: h2
+        children: ["Our Mission"]
+      - type: element
+        tag: p
+        children: ["Make website building simple, readable, and powerful using YAML."]
