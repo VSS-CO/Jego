@@ -1,0 +1,36 @@
+name: Jego Build & Deploy
+description: Build Jego YAML static sites and deploy to GitHub Pages
+author: VSS-CO
+branding:
+  color: blue
+  icon: logo.png   # Place your 128x128 PNG logo here
+
+inputs:
+  github_token:
+    description: 'GitHub token for deploying to GitHub Pages'
+    required: true
+  branch:
+    description: 'Branch to deploy the site to'
+    required: false
+    default: gh-pages
+
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+
+    - name: Build Jego site
+      run: php build.php
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v6
+      with:
+        github_token: ${{ inputs.github_token }}
+        publish_dir: ./dist
+        publish_branch: ${{ inputs.branch }}
