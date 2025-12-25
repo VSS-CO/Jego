@@ -1,0 +1,23 @@
+# PHP stuff
+/vendor/
+/composer.lock
+
+# Build output
+/dist/
+/tmp_build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node stuff (if using npm)
+node_modules/
+package-lock.json
+
+# IDE files
+.vscode/
+.idea/
+*.swp
