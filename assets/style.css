@@ -1,0 +1,76 @@
+/* Global styles */
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px;
+    background: #fafafa;
+    color: #333;
+}
+
+/* Header & Footer */
+header h2 {
+    margin: 0 0 10px;
+}
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #666;
+}
+
+/* Hero section */
+.hero {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Buttons */
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+a.btn:hover {
+    background-color: #333;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+}
+
+/* Grid container */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Grid items */
+.grid .card {
+    flex: 1 1 calc(33% - 20px);
+    box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid .card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Images */
+img.responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
