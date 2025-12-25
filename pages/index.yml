@@ -1,0 +1,72 @@
+title: Home
+blocks:
+  - type: hero
+    title: "Welcome to YAML Builder"
+    subtitle: "Build static sites with YAML + PHP"
+    style:
+      background-color: "#e0f7fa"
+      padding: "60px 20px"
+      text-align: "center"
+
+  - type: text
+    content: "Check out our features below!"
+    style:
+      text-align: "center"
+      font-size: "20px"
+      margin-bottom: "20px"
+
+  - type: element
+    tag: div
+    attrs:
+      class: "grid"
+    children:
+      - type: element
+        tag: div
+        attrs:
+          class: "card"
+        children:
+          - type: element
+            tag: h3
+            children: ["Responsive Design"]
+          - type: element
+            tag: p
+            children: ["Your site will look great on desktop and mobile."]
+          - type: element
+            tag: img
+            attrs:
+              src: "assets/responsive.png"
+              class: "responsive"
+
+      - type: element
+        tag: div
+        attrs:
+          class: "card"
+        children:
+          - type: element
+            tag: h3
+            children: ["YAML-powered"]
+          - type: element
+            tag: p
+            children: ["Edit pages easily using human-readable YAML files."]
+          - type: element
+            tag: img
+            attrs:
+              src: "assets/yaml.png"
+              class: "responsive"
+
+      - type: element
+        tag: div
+        attrs:
+          class: "card"
+        children:
+          - type: element
+            tag: h3
+            children: ["CSS Engine"]
+          - type: element
+            tag: p
+            children: ["Inline styles for each block, fully customizable."]
+          - type: element
+            tag: img
+            attrs:
+              src: "assets/css.png"
+              class: "responsive"
