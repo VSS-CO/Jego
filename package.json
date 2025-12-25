@@ -1,0 +1,17 @@
+{
+  "name": "jego",
+  "version": "1.0.1",
+  "description": "A static site builder using YAML",
+  "keywords": [
+    "static",
+    "site"
+  ],
+  "license": "MIT",
+  "author": "VSS.CO",
+  "type": "commonjs",
+  "main": "index.php",
+  "scripts": {
+    "dev": "php -S localhost:8000",
+    "build": "php build.php"
+  }
+}
